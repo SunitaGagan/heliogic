@@ -2,6 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  color: #0a103a;
 }
 .logo > img {
   height: 30px;
@@ -56,6 +57,23 @@ body {
 .section {
   position: relative;
   padding: 80px 0;
+  z-index: 0;
+}
+header{
+  position: relative;
+  z-index: 999;
+}
+.sub-header{
+  height: 300px;
+}
+.contact-section{
+  position: relative;
+  padding: 80px 0 20px 0;
+  z-index: 0;
+}
+.icon-box svg{
+  width: 40px;
+  height: 40px;
 }
 .btn-outline {
   padding: 22px 40px;
@@ -65,11 +83,12 @@ body {
   color: #0a103a;
   transition: all ease-in 0.2s;
 }
-.section h3 {
+.section h3,.contact-section h3 {
   font-size: 40px;
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
+  color: #0a103a;
 }
 .btn-outline:hover {
   background-color: #0a103a;
@@ -94,7 +113,8 @@ body {
 }
 
 .vision-box > div::before,
-.vision-box > div::after,.box-one::after,.box-one::before {
+.vision-box > div::after,.box-one::after,.box-one::before,
+.produ-box::before,.produ-box::after {
   content: "";
   position: absolute;
   width: 0;
@@ -104,26 +124,26 @@ body {
   border-radius: 4px;
 }
 
-.vision-box > div::before,.box-one::before {
+.vision-box > div::before,.box-one::before,.produ-box::before{
   top: 0;
   left: 0;
 }
 
-.vision-box > div::after,.box-one::after {
+.vision-box > div::after,.box-one::after,.produ-box::after {
   bottom: 0;
   right: 0;
 }
 
-.vision-box > div:hover::before,.box-one:hover::before {
+.vision-box > div:hover::before,.box-one:hover::before,.produ-box:hover::before{
   width: 100%;
 }
 
-.vision-box > div:hover::after,.box-one:hover::after {
+.vision-box > div:hover::after,.box-one:hover::after,.produ-box:hover::after{
   width: 100%;
 }
 
 .vision-box > div span::before,
-.vision-box > div span::after,.box-one span::before,.box-one span::after {
+.vision-box > div span::after,.box-one span::before,.box-one span::after,.produ-box span::after,.produ-box::before {
   content: "";
   position: absolute;
   height: 0;
@@ -132,21 +152,21 @@ body {
   transition: all 0.4s ease;
 }
 
-.vision-box > div span::before,.box-one span::before {
+.vision-box > div span::before,.box-one span::before,.produ-box span::before {
   top: 0;
   right: 0;
 }
 
-.vision-box > div span::after,.box-one span::after {
+.vision-box > div span::after,.box-one span::after,.produ-box span::after {
   bottom: 0;
   left: 0;
 }
 
-.vision-box > div:hover span::before,.box-one:hover span::before {
+.vision-box > div:hover span::before,.box-one:hover span::before,.produ-box:hover span::before {
   height: 100%;
 }
 
-.vision-box > div:hover span::after ,.box-one:hover span::after{
+.vision-box > div:hover span::after ,.box-one:hover span::after,.produ-box:hover span::after{
   height: 100%;
 }
 .banner h2 {
@@ -168,7 +188,8 @@ body {
 .box-two::before,
 .box-three::before,
 .box-four::before,
-.service-box::before {
+.service-box::before,
+.produ-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -183,7 +204,8 @@ body {
 .box-two:hover::before,
 .box-three:hover::before,
 .box-four:hover::before,
-.service-box:hover::before {
+.service-box:hover::before,
+.produ-box:hover::before{
   left: 0;
 }
 .box-two,
@@ -253,9 +275,13 @@ body {
 }
 .box-three svg {
   display: block;
-  margin: 0 auto 20px auto;
-  width: 45px;
-  height: 45px;
+  margin: 0 auto 15px auto;
+  width: 40px;
+  height: 40px;
+}
+.global-section h3,.section-perform h3{
+  color:#fff;
+  text-transform: capitalize;
 }
 .box-four {
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -277,7 +303,7 @@ body {
   font-weight: 400;
   display: block;
 }
-.box-one { 
+.box-one, .produ-box { 
   padding: 20px;
   text-align: center;
   justify-content: center;
@@ -292,15 +318,15 @@ body {
   border-radius: 4px;
   transition:background 0.5s ease, color 0.5s ease;
 }
-.box-one p {
+.box-one p,.produ-box p{
   font-size: 14px;
   text-align: center;
 }
 .box-one > h4 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
 }
-.box-one h5 {
+.box-one h5, .produ-box h5{
   margin-top: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -315,9 +341,34 @@ body {
   color: #0a103a;
   border: 1px solid #f8f8f8;  
 }
+.box-one h5,.produ-box h5{ font-size: 22px; margin-bottom: 15px;}
+.sub-header h3{ color: #0a103a; font-size: 38px; font-weight: 700;}
 .service-right{ position: relative;}
 .service-right img{ border-radius: 4px;}
+.service-section .box-one ul > li{ font-weight: 500;margin-bottom: 10px; font-size: 16px;}
+.service-section .box-one p{text-align: left; font-size: 16px;}
+.service-section .box-one h6{ font-weight: 600; margin-bottom: 15px; text-align: left; margin-top: 15px; font-size: 18px;}
+.service-section .box-one{ height: auto; padding: 30px 25px; text-align: left; display: block;}
 .service-box h4{ font-size: 25px; font-weight: 600; color: #0a103a; margin-bottom: 18px;}
+.tab-active {
+  background-color: #39207a; /* purple */
+  color: white;
+}
+.tab-inactive {
+  background-color: transparent;
+  color: #39207a;
+  border: 1px solid #e6e6ee;
+}
+.pill-btn {
+  background: #39207a;
+  color: white;
+  border-radius: 9999px;
+  padding: 14px 64px;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+}
+.input-error { border-color: #ff5a5f !important; }
 @media (min-width: 768px) {
   .left-side-service{
     margin-top: 85px;
@@ -328,7 +379,7 @@ body {
     text-align: right;
   }
   .box-one {
-    height: 200px;
+    height: 270px;
   }
   .vision-box > div {
     height: 250px;
@@ -339,4 +390,44 @@ body {
     line-height: 65px;
     margin-bottom: 40px;
   }
+  .section-bg{
+    position: relative;
+  }
+  .section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 155px;
+    height: 310px;
+    background: url('../images/ellipse-right.png') no-repeat top right;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 155px;
+    height: 310px;
+    background: url('../images/ellipse-right.png') no-repeat top right;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .section-bg::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 155px;
+    height: 310px;
+    background: url('../images/ellipse-left.png') no-repeat top left;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
 }
