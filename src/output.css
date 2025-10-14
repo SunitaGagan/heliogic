@@ -705,6 +705,10 @@ video {
   height: 100vh;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -723,6 +727,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-2xl {
@@ -956,6 +964,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
 .placeholder-gray-400::-moz-placeholder {
