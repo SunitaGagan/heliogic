@@ -329,19 +329,19 @@ header{
 .box-one h5, .produ-box h5{
   margin-top: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .service-box{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid #f8f8f8;
-  padding: 45px;
+  padding:35px;
   text-align: center;
   color: #0a103a;
   border: 1px solid #f8f8f8;  
 }
-.box-one h5,.produ-box h5{ font-size: 22px; margin-bottom: 15px;}
+.box-one h5,.produ-box h5{ font-size:20px; margin-bottom: 15px;}
 .sub-header h3{ color: #0a103a; font-size: 38px; font-weight: 700;}
 .service-right{ position: relative;}
 .service-right img{ border-radius: 4px;}
@@ -349,18 +349,24 @@ header{
 .service-section .box-one p{text-align: left; font-size: 16px;}
 .service-section .box-one h6{ font-weight: 600; margin-bottom: 15px; text-align: left; margin-top: 15px; font-size: 18px;}
 .service-section .box-one{ height: auto; padding: 30px 25px; text-align: left; display: block;}
-.service-box h4{ font-size: 25px; font-weight: 600; color: #0a103a; margin-bottom: 18px;}
+.service-box h4{ font-size: 20px;
+  font-weight: 600;
+  color: #0a103a;
+  margin-bottom: 10px;}
+  .service-box:hover,.box-two:hover,.box-four:hover {
+    border: 1px solid #62c6f2;
+  }
 .tab-active {
-  background-color: #39207a; /* purple */
+  background-color: #62C6F2; /* purple */
   color: white;
 }
 .tab-inactive {
   background-color: transparent;
-  color: #39207a;
+  color: #62C6F2;
   border: 1px solid #e6e6ee;
 }
 .pill-btn {
-  background: #39207a;
+  background: #62C6F2;
   color: white;
   border-radius: 9999px;
   padding: 14px 64px;
@@ -370,11 +376,12 @@ header{
 }
 .input-error { border-color: #ff5a5f !important; }
 @media (min-width: 768px) {
-  .left-side-service{
+  .left-side-service {
     margin-top: 85px;
-    margin-right: -100px;
+    margin-right: -80px;
     text-align: right;
   }
+  .service-right >img{ height:650px; width: 100%;}
   .service-box{
     text-align: right;
   }
@@ -430,4 +437,24 @@ header{
     z-index: -1;
   }
   
+}
+.banner-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.0);
+}
+.slide-content {
+  position: relative;
+  z-index: 10;
+}
+.btn-outline{
+  margin-top: 30px;
+  display: inline-block;
 }
