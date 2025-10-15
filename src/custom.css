@@ -332,14 +332,19 @@ header{
   font-weight: 500;
 }
 .service-box{
-  margin-bottom: 10px;
-  border-radius: 4px;
+  margin-bottom: 10px;  
   background-color: #fff;
   border: 1px solid #f8f8f8;
   padding:35px;
   text-align: center;
   color: #0a103a;
-  border: 1px solid #f8f8f8;  
+  border: 1px solid #f8f8f8;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .box-one h5,.produ-box h5{ font-size:20px; margin-bottom: 15px;}
 .sub-header h3{ color: #0a103a; font-size: 38px; font-weight: 700;}
@@ -383,7 +388,7 @@ header{
   }
   .service-right >img{ height:650px; width: 100%;}
   .service-box{
-    text-align: right;
+    text-align: center;
   }
   .box-one {
     height: 270px;
