@@ -463,3 +463,10 @@ header{
   margin-top: 30px;
   display: inline-block;
 }
+.vision-box img{
+  width:80%;
+}
+@media (max-width: 767px) {
+  .service-box{ width: 200px; height: 200px;}
+
+}

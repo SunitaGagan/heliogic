@@ -17,7 +17,6 @@
     <script src="src/script.js"></script>
 </head>
 
-
 <body>
     <!-- Header -->
     <header class="shadow-sm bg-transparent header">
@@ -29,7 +28,6 @@
                         <img src="images/logo-heliogic.png" alt="logo" />
                     </a>
                 </div>
-
                 <!-- Menu Button (Mobile) -->
                 <button id="menu-btn" class="md:hidden focus:outline-none">
           <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -37,7 +35,6 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-
                 <!-- Navigation Links -->
                 <nav id="nav-links" class="navbar hidden md:flex flex-col md:flex-row items-center gap-6  absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent py-4 md:py-0 shadow-md md:shadow-none z-50">
                     <ul class="flex flex-col md:flex-row items-center">
@@ -50,7 +47,6 @@
                         <a href="tel:732-474-8515"> 732-474-8515</a>
                     </p>
                 </nav>
-
                 <!-- Phone (Desktop only) -->
                 <div class="hidden md:block mobile-number">
                     <a href="tel:732-474-8515"> 732-474-8515</a>
@@ -58,93 +54,34 @@
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
     <!-- Slider Section -->
-    <div class="owl-carousel owl-theme h-screen w-full bg-cover " style="background-image: url('images/header.png');">
-
-        <!-- Slide 1 -->
-        <section class="banner-slide flex flex-col justify-center items-center text-center px-4">
-            <div class="overlay"></div>
-            <div class="slide-content max-w-2xl">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">
-                    IT STAFFING
-                </h2>
-                <p class="mb-6">
-                    We help companies scale with top tech professionals <br>and help candidates find careers that matter.
-                </p>
-                <a href="#" class="btn-outline">Read More</a>
-            </div>
-        </section>
-
-        <!-- Slide 2 -->
-        <section class="banner-slide flex flex-col justify-center items-center text-center px-4">
-            <div class="overlay"></div>
-            <div class="slide-content max-w-2xl">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">
-                    Software Development
-                </h2>
-                <p class="mb-6">
-                    We build digital solutions that transform ideas into reality.
-                </p>
-                <a href="#" class="btn-outline">Read More</a>
-            </div>
-        </section>
-
-        <!-- Slide 3 -->
-        <section class="banner-slide flex flex-col justify-center items-center text-center px-4">
-            <div class="overlay"></div>
-            <div class="slide-content max-w-2xl">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">
-                    AI Products
-                </h2>
-                <p class="mb-6">
-                    Our mission is to connect you with world-class developers and designers.
-                </p>
-                <a href="#" class="btn-outline">Read More</a>
-            </div>
-        </section>
-
-    </div>
-
-
-
-    <!-- Our Services -->
-    <section class="section bg-gray text-center">
-        <div class="container mx-auto px-4">
-            <h3>Our Services</h3>
-            <p class="max-w-2xl mx-auto text-gray-600 mb-10">
-                Heliogic offers a full range of workforce and technology solutions to help organizations scale effectively.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-12 md:pt-12">
-                <div class="left-side-service md:col-span-4">
-                    <div class="service-box">
-                        <h4> IT Staffing </h4>
-                        <p>
-                            Agile workforce solutions for contract and permanent roles.
-                        </p>
-                    </div>
-
-                    <div class="service-box">
-                        <h4> Technology Consulting </h4>
-                        <p>
-                            Expert delivery in ERP, AI/ML, RPA, and custom software.
-                        </p>
-                    </div>
-                    <div class="service-box">
-                        <h4> AI Products </h4>
-                        <p>
-                            Innovative AI solutions designed to transform businesses.
-                        </p>
+    <section class="md:h-screen w-full bg-cover text-center px-2 flex justify-center items-center banner" style="background: url(images/header.png);">
+        <div class="container mx-auto px-4 max-w-5xl lg:pt-0 pt-10">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 p-4  text-center flex justify-center">
+                    <div class="service-box ">
+                        <a href="it-staffing.html" target="_parent">
+                            <h4> Staffing Solutions </h4>
+                        </a>
                     </div>
                 </div>
-                <div class="md:col-span-8 service-right"> <img src="images/emp-bg.jpg" alt="" class="" /> </div>
+                <div class="w-full md:w-1/3 p-4 text-center flex justify-center">
+                    <div class="service-box">
+                        <a href="software.html" target="_parent">
+                            <h4> Software Development </h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4  text-center flex justify-center">
+                    <div class="service-box">
+                        <a href="index.html" target="_parent">
+                            <h4> AI Products</h4>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
     <!-- People & Performance -->
     <section class="section section-perform text-white text-center" style="background-image: url('images/tab-bg-img.jpg');">
         <div class="container mx-auto px-4 z-40 relative">
@@ -250,19 +187,19 @@
                 <div class="box-four">
                     <h5> Raleigh</h5> <span>North Carolina</span>
                 </div>
-                <div class="box-four ">
+                <div class="box-four">
                     <h5> Atlanta</h5><span>Georgia</span>
                 </div>
                 <div class="box-four ">
-                    <h5> Boonton</h5><span>New Jersey</span>
+                    <h5> Edison</h5><span>New Jersey</span>
                 </div>
-                <div class="box-four ">
+                <div class="box-four">
                     <h5> Noida</h5><span>Uttar Pradesh</span>
                 </div>
-                <div class="box-four ">
+                <div class="box-four">
                     <h5> Ahmedabad</h5><span>Gujarat</span>
                 </div>
-                <div class="box-four ">
+                <div class="box-four">
                     <h5> Jamshedpur</h5> <span>Jharkhand</span>
                 </div>
             </div>
@@ -274,7 +211,7 @@
         <div class="container mx-auto px-4 z-10 relative">
             <div class="flex flex-col md:flex-row items-center justify-between text-sm ">
                 <a href="mailto:info@heliogic.com">info@heliogic.com</a>
-                <a href="# " class="flex items-center gap-1 text-gray-900 hover:text-blue-600 "><svg
+                <a href="https://www.linkedin.com/company/heliogicstaffing/" class="flex items-center gap-1 text-gray-900 hover:text-blue-600" target="_blank"><svg
         xmlns="http://www.w3.org/2000/svg " class="w-8 h-8 " fill="currentColor " viewBox="0 0 16 16 ">
         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.473 0 16 .513 16 1.146v13.708c0 .633-.527 1.146-1.175 1.146H1.175C.527 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822
         0-1.358.54-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zm4.908 8.212h2.4V9.359c0-.203.015-.406.074-.551.162-.406.531-.826 1.15-.826.812 0 1.137.623 1.137 1.536v3.876h2.4V9.25c0-2.22-1.184-3.252-2.762-3.252-1.274 0-1.845.7-2.165 1.192h.03v-1.02h-2.4c.03.66
@@ -304,5 +241,7 @@
 </body>
 
 
+
+</html>
 
 </html>
