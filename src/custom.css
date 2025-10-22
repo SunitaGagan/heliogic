@@ -464,7 +464,7 @@ header{
   display: inline-block;
 }
 .vision-box img{
-  width:80%;
+  max-width:160px;
 }
 @media (max-width: 767px) {
   .service-box{ width: 200px; height: 200px;}
